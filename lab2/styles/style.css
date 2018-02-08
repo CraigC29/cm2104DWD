@@ -11,3 +11,11 @@ header, section, article, nav, aside, footer, div {
 }
 
 .warning{font-weight: bold;}
+
+.flex-container{
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
