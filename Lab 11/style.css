@@ -1,0 +1,126 @@
+.headText {
+  padding-top: 100px;
+  font-size: 200px;
+  color: blue;
+  font-family: "Century Gothic";
+  text-align: center;
+  width: screenWidth;
+}
+
+#base{
+  text-align: center;
+  font-family: "Century Gothic";
+}
+
+#searchInput{
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  font-size: 30px;
+  font-family: "Century Gothic";
+}
+
+#submit{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Century Gothic";
+}
+
+.gridTile {
+  color: blue;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.centerText{
+  text-align: center;
+}
+
+#apiDiv {
+    border: dashed 2px #CCC;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+    #apiDiv input, #apiDiv button {
+        font-size: 25px;
+        color: #000;
+    }
+
+    #apiDiv h4 {
+        margin: 10px 0;
+    }
+
+    #apiDiv .imageDiv {
+        text-align: center;
+    }
+
+        #apiDiv .imageDiv img {
+            display: none;
+        }
+
+    #apiDiv #message {
+        padding-top: 10px;
+    }
+
+        #apiDiv #message .resultDiv {
+            background: #FFF;
+            display: inline-block;
+        }
+
+            #apiDiv #message .resultDiv &gt; p {
+                color: #000;
+                display: inline-block;
+                width: 95%;
+                padding: 10px;
+                border-bottom: double 2px #CCC;
+            }
+
+            #apiDiv #message .resultDiv .result {
+                width: 23%;
+                height: 300px;
+                padding: 6px;
+                float: left;
+                text-align: center;
+                cursor: pointer;
+            }
+
+                #apiDiv #message .resultDiv .result img {
+                    width: 75%;
+                }
+
+                #apiDiv #message .resultDiv .result p {
+                    margin: 0;
+                }
+
+                    #apiDiv #message .resultDiv .result p a {
+                        color: #808080;
+                        text-decoration: none;
+                        font-size: 20px;
+                        height: 100px;
+                    }
+
+                        #apiDiv #message .resultDiv .result p a:hover {
+                            text-decoration: underline;
+                        }
+
+#myModal {
+    color: #000;
+}
+
+#reset {
+    padding: 5px 10px;
+    background: #4CAF50;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+    #reset:hover {
+        color: #4CAF50;
+        background: #FFF;
+    }
