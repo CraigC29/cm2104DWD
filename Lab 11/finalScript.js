@@ -31,7 +31,7 @@ $(document).ready(function () {
                 var resultHtml = $("<div class=\"resultDiv\"><p>Movies</p>");
                 for (i = 0; i < result["results"].length; i++) {
 
-                    var image = result["results"][i]["poster_path"] == null ? "Image/no-image.png" : "https://image.tmdb.org/t/p/w500/" + result["results"][i]["poster_path"];
+                    var image = result["results"][i]["poster_path"] == null ? "Image/no-image.png" : "https://image.tmdb.org/t/p/w154/" + result["results"][i]["poster_path"];
 
                     resultHtml.append("<div class=\"result\" resourceId=\"" + result["results"][i]["title"] + "\">" + "<img src=\"" + image + "\" />" + "<p><a>" + result["results"][i]["title"] + "</a></p></div>")
                 }
