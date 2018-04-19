@@ -31,19 +31,19 @@ MongoClient.connect(url, function(err, database) {
 //you need to complete these
 
 app.get('/', function(req,res) {
-  res.render('pages/index')
+  res.render('pages/index');
 });
 app.get('/add', function(req,res) {
-  res.render('pages/add')
+  res.render('pages/add');
 });
 app.get('/delete', function(req,res) {
-  res.render('pages/delete')
+  res.render('pages/delete');
 });
 app.get('/filter', function(req,res) {
-  res.render('pages/filter')
+  res.render('pages/filter');
 });
 app.get('/update', function(req,res) {
-  res.render('pages/update')
+  res.render('pages/update');
 });
 
 
