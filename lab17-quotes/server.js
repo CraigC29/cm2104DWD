@@ -31,7 +31,17 @@ MongoClient.connect(url, function(err, database) {
 //you need to complete these
 
 app.get('/', function(req,res) {
-  res.render('pages/index');
+  db.collection('quotes').find().toArray(function(err, result) {
+    if (err) throw err;
+    console.log(result);
+    var output = "<h1>All the quotes</h1>";
+    for (var i = 0; i < result.length; i++) {
+      output += "<div>"
+      output += "<h3>" + result[i].name + "</h3>"
+      output += "<p>" + result[i].quote + "</p>"
+      output += "</div>"
+    }
+    res.render('index.ejs', {quotes:result})
 });
 app.get('/add', function(req,res) {
   res.render('pages/add');
