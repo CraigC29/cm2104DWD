@@ -34,14 +34,7 @@ app.get('/', function(req,res) {
   db.collection('quotes').find().toArray(function(err, result) {
     if (err) throw err;
     console.log(result);
-    var output = "<h1>All the quotes</h1>";
-    for (var i = 0; i < result.length; i++) {
-      output += "<div>"
-      output += "<h3>" + result[i].name + "</h3>"
-      output += "<p>" + result[i].quote + "</p>"
-      output += "</div>"
-    }
-    res.render('index.ejs', {quotes:result})
+    res.render('pages/index', {quotes:result})
   });
 });
 
