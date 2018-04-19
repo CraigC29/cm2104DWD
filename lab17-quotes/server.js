@@ -1,10 +1,10 @@
 /**
- * @Author: John Isaacs <john>
- * @Date:   18-Mar-182018
- * @Filename: server.js
- * @Last modified by:   john
- * @Last modified time: 25-Mar-182018
- */
+* @Author: John Isaacs <john>
+* @Date:   18-Mar-182018
+* @Filename: server.js
+* @Last modified by:   john
+* @Last modified time: 25-Mar-182018
+*/
 
 
 
@@ -42,7 +42,9 @@ app.get('/', function(req,res) {
       output += "</div>"
     }
     res.render('index.ejs', {quotes:result})
+  });
 });
+
 app.get('/add', function(req,res) {
   res.render('pages/add');
 });
